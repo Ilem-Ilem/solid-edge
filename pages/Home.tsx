@@ -235,13 +235,19 @@ const Home: React.FC = () => {
               <ScrollReveal key={p.id} animation="fade-up" delay={i * 200}>
                 <div className="group relative h-[550px] overflow-hidden rounded-[48px] shadow-sm hover:shadow-2xl transition-all duration-700 bg-white p-4">
                   <div className="relative h-full w-full overflow-hidden rounded-[40px]">
-                    <img src={p.image} alt={p.name} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                    <img 
+                      src={
+                        i === 0 ? "/WhatsApp Image 2026-02-06 at 7.50.09 AM.jpeg" : 
+                        i === PROJECTS.length - 1 ? "/WhatsApp Image 2026-02-06 at 7.50.57 AM.jpeg" : 
+                        p.image
+                      } 
+                      alt={p.name} 
+                      className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
                     <div className="absolute inset-0 p-10 flex flex-col justify-end text-white">
                       <div className="space-y-3">
                         <span className="inline-block glass-light px-3 py-1 text-[9px] font-black uppercase tracking-[0.3em] rounded border-white/20">{p.type}</span>
-                        <h3 className="text-3xl font-display tracking-tight uppercase">{p.name}</h3>
-                        <p className="text-white/70 text-[10px] uppercase tracking-[0.2em] font-bold"><i className="fa-solid fa-location-dot mr-2 text-blue-400"></i>{p.location}</p>
                       </div>
                     </div>
                   </div>
