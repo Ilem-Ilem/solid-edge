@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SERVICES, PROJECTS } from '../constants';
+import heroImage from '../assets/hero.jpeg';
 import ScrollReveal from '../components/ScrollReveal';
 import { useScrollToSection } from '../hooks/useScrollToSection';
 
@@ -14,7 +15,7 @@ const Home: React.FC = () => {
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/161 Powell Road, Brantford, ON N3T OE5/Attachments/hero.jpeg"
+            src={heroImage}
             alt="Pre-Construction and Management Blueprint"
             className="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
           />
@@ -178,7 +179,7 @@ const Home: React.FC = () => {
             <div className="lg:w-1/2 relative group">
               <ScrollReveal animation="zoom-in" duration={1500}>
                 <div className="relative z-10 glass-light p-3 rounded-[48px] border-slate-200 shadow-2xl">
-                  <img src="/161 Powell Road, Brantford, ON N3T OE5/Attachments/hero.jpeg" alt="Job site" className="rounded-[40px] w-full" />
+                  <img src={heroImage} alt="Job site" className="rounded-[40px] w-full" />
                 </div>
                 <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-blue-100 rounded-full blur-[80px] -z-10 opacity-60"></div>
               </ScrollReveal>

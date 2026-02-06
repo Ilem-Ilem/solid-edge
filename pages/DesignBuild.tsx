@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import designBuildImage from '../assets/AB52E95E-3D4B-49BA-BB2E-ADBE65D89CCA.png';
 import ScrollReveal from '../components/ScrollReveal';
 
 const DesignBuild: React.FC = () => {
@@ -28,7 +29,7 @@ const DesignBuild: React.FC = () => {
               <div className="absolute -inset-4 bg-blue-100/50 rounded-[64px] blur-3xl opacity-60"></div>
               <div className="relative glass-light p-4 rounded-[64px] border-white shadow-2xl overflow-hidden">
                 <img
-                  src="/161 Powell Road, Brantford, ON N3T OE5/Attachments/AB52E95E-3D4B-49BA-BB2E-ADBE65D89CCA.png"
+                  src={designBuildImage}
                   alt="Design & Build"
                   className="rounded-[56px] w-full"
                 />

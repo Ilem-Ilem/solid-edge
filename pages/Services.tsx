@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SERVICES } from '../constants';
+import heroImage from '../assets/hero.jpeg';
 import ScrollReveal from '../components/ScrollReveal';
 
 const Services: React.FC = () => {
@@ -88,7 +89,7 @@ const Services: React.FC = () => {
               </div>
               <div className="relative">
                 <div className="glass-light p-3 rounded-[40px] shadow-2xl border-white overflow-hidden rotate-2 hover:rotate-0 transition-transform duration-700">
-                  <img src="/161 Powell Road, Brantford, ON N3T OE5/Attachments/hero.jpeg" alt="Construction detail" className="rounded-[32px]" />
+                  <img src={heroImage} alt="Construction detail" className="rounded-[32px]" />
                 </div>
               </div>
             </div>

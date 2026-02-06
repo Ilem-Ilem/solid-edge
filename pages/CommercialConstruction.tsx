@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import commercialImage from '../assets/07BB580B-F331-41A4-9237-94DBB4E9C91F.jpeg';
 import ScrollReveal from '../components/ScrollReveal';
 
 const CommercialConstruction: React.FC = () => {
@@ -28,7 +29,7 @@ const CommercialConstruction: React.FC = () => {
               <div className="absolute -inset-4 bg-blue-100/50 rounded-[64px] blur-3xl opacity-60"></div>
               <div className="relative glass-light p-4 rounded-[64px] border-white shadow-2xl overflow-hidden">
                 <img
-                  src="/161 Powell Road, Brantford, ON N3T OE5/Attachments/07BB580B-F331-41A4-9237-94DBB4E9C91F.jpeg"
+                  src={commercialImage}
                   alt="Commercial Construction"
                   className="rounded-[56px] w-full"
                 />

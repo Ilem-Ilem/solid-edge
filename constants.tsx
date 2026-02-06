@@ -1,5 +1,8 @@
 
 import React from 'react';
+import projectImage1 from './assets/C6CDFDCC-EEB6-4DA3-88FE-7A0FDE86DFE3.jpeg';
+import projectImage2 from './assets/4FCA4D98-0F5E-430F-AEA0-DB02FBA8432B.png';
+import projectImage3 from './assets/6EF32047-C56E-4ECC-ADB7-EC992A826869.png';
 
 export const NAV_LINKS = [
   { name: 'Home', path: '/' },
@@ -48,7 +51,7 @@ export const PROJECTS = [
     type: 'Residential' as const,
     location: 'Toronto, ON',
     description: 'Luxury waterfront residential development.',
-    image: '/161 Powell Road, Brantford, ON N3T OE5/Attachments/C6CDFDCC-EEB6-4DA3-88FE-7A0FDE86DFE3.jpeg'
+    image: projectImage1
   },
   {
     id: '2',
@@ -56,7 +59,7 @@ export const PROJECTS = [
     type: 'Commercial' as const,
     location: 'Vancouver, BC',
     description: 'Modern commercial office building with sustainable features.',
-    image: '/161 Powell Road, Brantford, ON N3T OE5/Attachments/4FCA4D98-0F5E-430F-AEA0-DB02FBA8432B.png'
+    image: projectImage2
   },
   {
     id: '3',
@@ -64,7 +67,7 @@ export const PROJECTS = [
     type: 'Commercial' as const,
     location: 'Calgary, AB',
     description: 'Environmentally friendly commercial building with LEED certification.',
-    image: '/161 Powell Road, Brantford, ON N3T OE5/Attachments/6EF32047-C56E-4ECC-ADB7-EC992A826869.png'
+    image: projectImage3
   }
 ];
 

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { NAV_LINKS } from '../constants';
+import logo from '../assets/logo.png';
 import WhatsAppPopup from './WhatsAppPopup';
 
 const Header: React.FC = () => {
@@ -20,7 +21,7 @@ const Header: React.FC = () => {
       <div className={`container mx-auto px-6`}>
         <div className={`glass-light rounded-2xl flex justify-between items-center px-6 py-3 transition-all duration-500 ${scrolled ? 'shadow-lg bg-white/70' : ''}`}>
           <Link to="/" className="flex items-center space-x-3 group">
-            <img src="./logo.png" alt="Solid Edge Logo" className="w-10 h-10 object-contain" />
+            <img src={logo} alt="Solid Edge Logo" className="w-10 h-10 object-contain" />
             <div>
               <span className="text-slate-900 font-display text-xl tracking-tight block">SOLID EDGE</span>
               <span className="block text-blue-600 text-[9px] tracking-[0.3em] font-black uppercase -mt-1">Canada</span>
@@ -85,7 +86,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
           <div className="space-y-8">
             <Link to="/" className="flex items-center space-x-3">
-              <img src="./logo.png" alt="Solid Edge Logo" className="w-8 h-8 object-contain" />
+              <img src={logo} alt="Solid Edge Logo" className="w-8 h-8 object-contain" />
               <span className="text-slate-900 font-display text-xl tracking-tight">Solid Edge</span>
             </Link>
             <p className="text-slate-500 text-sm leading-relaxed font-medium">
@@ -144,7 +145,7 @@ const Footer: React.FC = () => {
   );
 };
 
-export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const LayoutComponent: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -156,3 +157,5 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
     </div>
   );
 };
+
+export { LayoutComponent as Layout };
