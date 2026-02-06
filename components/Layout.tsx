@@ -129,6 +129,10 @@ const Footer: React.FC = () => {
                 <i className="fa-solid fa-phone text-blue-600"></i>
                 <span className="text-slate-500 font-medium">+1 450-425-8709</span>
               </li>
+              <li className="flex items-center space-x-4">
+                <i className="fa-solid fa-envelope text-blue-600"></i>
+                <span className="text-slate-500 font-medium">support@solidedgeconstruction.com</span>
+              </li>
             </ul>
           </div>
         </div>

@@ -119,6 +119,18 @@ const Contact: React.FC = () => {
                     </p>
                   </div>
                 </div>
+
+                <div className="flex items-start space-x-6">
+                  <div className="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl flex-shrink-0">
+                    <i className="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h3 className="font-black text-[11px] uppercase tracking-[0.2em] text-slate-900 mb-2">EMAIL</h3>
+                    <p className="text-slate-500 font-medium leading-relaxed">
+                      <a href="mailto:support@solidedgeconstruction.com">support@solidedgeconstruction.com</a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
