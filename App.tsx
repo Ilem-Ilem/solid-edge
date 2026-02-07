@@ -17,11 +17,11 @@ import Contact from './pages/Contact';
 // Placeholder components for other pages
 const PlaceholderPage: React.FC<{ title: string }> = ({ title }) => (
   <div className="pt-32 pb-20 text-center container mx-auto px-6">
-    <h1 className="text-4xl font-display mb-8 uppercase tracking-widest">{title}</h1>
-    <div className="bg-white p-20 rounded-2xl shadow-xl border border-dashed border-slate-300">
-      <p className="text-slate-400 font-display text-xl mb-4 italic">Experience Excellence Coming Soon</p>
-      <p className="text-slate-500 max-w-lg mx-auto leading-relaxed">
-        We are currently updating our {title.toLowerCase()} data with the latest project details and Canadian compliance standards. 
+    <h1 className="text-4xl font-display mb-8 uppercase tracking-widest text-white">{title}</h1>
+    <div className="bg-black p-20 rounded-2xl shadow-xl border border-dashed border-gray-700">
+      <p className="text-gray-400 font-display text-xl mb-4 italic">Experience Excellence Coming Soon</p>
+      <p className="text-gray-500 max-w-lg mx-auto leading-relaxed">
+        We are currently updating our {title.toLowerCase()} data with the latest project details and Canadian compliance standards.
         Please contact our office for immediate inquiries.
       </p>
     </div>
