@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-black text-[11px] uppercase tracking-[0.2em] text-white mb-2">EMAIL</h3>
                     <p className="text-gray-300 font-medium leading-relaxed">
-                      <a href="mailto:support@solidedgeconstruction.com">support@solidedgeconstruction.com</a>
+                      <a href="mailto:info@solidedgeconstruction.com">info@solidedgeconstruction.com</a>
                     </p>
                   </div>
                 </div>

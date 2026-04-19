@@ -115,6 +115,7 @@ const Footer: React.FC = () => {
               <li><Link to="/services/commercial" className="text-gray-400 hover:text-red-600 transition-colors">Commercial Hubs</Link></li>
               <li><Link to="/services/contracting" className="text-gray-400 hover:text-red-600 transition-colors">General Contracting</Link></li>
               <li><Link to="/services/design-build" className="text-gray-400 hover:text-red-600 transition-colors">Design & Build</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-red-600 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -131,7 +132,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-4">
                 <i className="fa-solid fa-envelope text-red-600"></i>
-                <span className="text-gray-400 font-medium">support@solidedgeconstruction.com</span>
+                <span className="text-gray-400 font-medium">info@solidedgeconstruction.com</span>
               </li>
             </ul>
           </div>
